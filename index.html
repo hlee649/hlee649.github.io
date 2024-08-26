@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
+    <title>Dynamic Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Homepage</h1>
-    <p>This is a simple homepage created using GitHub Pages.</p>
+
+<header>
+    <h1>Welcome to My Dynamic Homepage</h1>
+</header>
+
+<div class="content">
+    <h2>Current Time</h2>
+    <p id="time">Loading...</p>
+
+    <h2>Random Quote</h2>
+    <p id="quote">Loading...</p>
+</div>
+
+<script>
+    // Function to display the current time
+    function updateTime() {
+        const now = new Date();
+        document.getElementById('time').textContent = now.toLocaleTimeString();
+    }
+    setInterval(updateTime, 1000); // Update every second
+    updateTime(); // Initial call to display time immediately
+
+    // Function to display a random quote
+    const quotes = [
+        "The best way to predict the future is to invent it.",
+        "Life is 10% what happens to us and 90% how we react to it.",
+        "The only limit to our realization of tomorrow is our doubts of today.",
+        "Do not wait to strike till the iron is hot; but make it hot by striking.",
+        "Whether you think you can or you think you can't, you're right."
+    ];
+    function displayRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById('quote').textContent = quotes[randomIndex];
+    }
+    displayRandomQuote();
+</script>
+
 </body>
 </html>

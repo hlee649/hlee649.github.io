@@ -8,45 +8,52 @@ body {
 .navbar {
     background-color: #333;
     display: flex;
-    justify-content: center; /* Centers the navbar horizontally */
-    align-items: center; /* Aligns items vertically */
-    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing between logo and menu */
+    padding: 10px 20px;
 }
 
-/* Navbar Links */
+.navbar .logo img {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+    display: block;
+}
+
+.navbar .menu {
+    display: flex; /* Ensures menu stays in a row */
+    gap: 15px; /* Adds spacing between links */
+}
+
 .navbar a {
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    margin: 0 10px; /* Adds spacing between navbar items */
 }
 
-/* Hover Effect */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
-    border-radius: 5px; /* Optional: Adds rounded corners to hover effect */
-}
-
-/* Content */
-.content {
-    padding: 20px;
+    border-radius: 5px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* Stacks items vertically on small screens */
-        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        flex-direction: column; /* Stack links on small screens */
+        width: 100%;
+        text-align: center;
     }
 
     .navbar a {
         display: block;
         width: 100%;
-        text-align: center; /* Centers text */
-        padding: 10px;
-        margin: 0; /* Removes extra margins */
     }
 }
+
 

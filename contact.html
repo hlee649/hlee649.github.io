@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
 </head>
+
 <body>
+
     <div id="navbar"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get current page file name
+            if (currentPage === "") currentPage = "index.html"; // Default to index.html if empty
+    
+            let menuLinks = document.querySelectorAll(".menu a");
+    
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("active"); // Apply 'active' class to the matching link
+                }
+            });
+        });
+    </script>
+
     <script>
         fetch("navbar.html")
             .then(response => response.text())

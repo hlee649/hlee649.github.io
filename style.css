@@ -45,6 +45,13 @@ body {
     border-radius: 5px;
 }
 
+/* Highlight the active page */
+.navbar a.active {
+    color: orange !important; /* Force highlight color */
+    font-weight: bold;
+    border-bottom: 3px solid orange; /* Optional underline */
+}
+
 /* Responsive Design - Mobile View */
 @media screen and (max-width: 768px) {
     .navbar {

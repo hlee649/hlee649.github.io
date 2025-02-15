@@ -49,7 +49,6 @@ body {
 .navbar a.active {
     color: orange !important; /* Force highlight color */
     font-weight: bold;
-    border-bottom: 3px solid orange; /* Optional underline */
 }
 
 /* Responsive Design - Mobile View */

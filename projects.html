@@ -14,18 +14,29 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            let currentPage = window.location.pathname.split("/").pop(); // Get current page file name
-            if (currentPage === "") currentPage = "index.html"; // Default to index.html if empty
+            // Load the navbar first
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
     
-            let menuLinks = document.querySelectorAll(".menu a");
+                    // Now that navbar is loaded, highlight the active link
+                    let currentPage = window.location.pathname.split("/").pop();
+                    if (currentPage === "" || currentPage === "/") {
+                        currentPage = "index.html"; // Default to index.html if empty
+                    }
     
-            menuLinks.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("active"); // Apply 'active' class to the matching link
-                }
-            });
+                    let menuLinks = document.querySelectorAll(".menu a");
+                    menuLinks.forEach(link => {
+                        if (link.getAttribute("href") === currentPage) {
+                            link.classList.add("active"); // Apply 'active' class to the matching link
+                        }
+                    });
+                })
+                .catch(error => console.error("Error loading navbar:", error));
         });
     </script>
+    
     
     <script>
         fetch("navbar.html")

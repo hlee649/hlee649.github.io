@@ -8,13 +8,14 @@
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
+    <div id="navbar"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
 
 <!-- Content Section -->
 <div class="content">

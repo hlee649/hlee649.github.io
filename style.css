@@ -1,49 +1,46 @@
-/* Prevent Navbar from Moving While Loading */
-#navbar {
-    min-height: 60px; /* Ensures space is reserved */
-    display: flex;
-    justify-content: center; /* Centers the navbar */
-    align-items: center;
-    width: 100%;
-}
-
-/* Ensure the entire navbar container is correctly positioned */
+/* Navbar */
 .navbar {
     background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Keeps logo left, menu centered */
+    justify-content: space-between;
     padding: 10px 20px;
     width: 100%;
 }
 
-/* Logo styling */
-.navbar .logo {
-    display: flex;
-    align-items: center;
+/* Brand Name (Text Button) */
+.navbar .brand-name {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
-.navbar .logo img {
-    height: 40px;
-    width: auto;
+/* Hover Effect */
+.navbar .brand-name:hover {
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    border-radius: 5px;
 }
 
-/* Menu container */
+/* Menu */
 .navbar .menu {
     display: flex;
-    gap: 15px; /* Space between menu items */
+    gap: 15px;
 }
 
-/* Menu links */
+/* Menu Links */
 .navbar a {
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 16px;
 }
 
-/* Active link highlight */
+/* Active Link */
 .navbar a.active {
     color: orange !important;
     font-weight: bold;

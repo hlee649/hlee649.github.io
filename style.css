@@ -3,6 +3,57 @@ body {
     font-family: Arial, sans-serif; /* Applies sans-serif to everything */
 }
 
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(50%); /* Converts image to black & white */
+    transition: filter 0.3s ease-in-out;
+}
+
+#profile-pic:hover {
+    filter: grayscale(0%); /* Restores color when hovered */
+}
+
+
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+}
+
+.contact-links img {
+    width: 40px;  /* Default size for all icons */
+    height: 40px;
+    filter: grayscale(100%);
+    object-fit: contain;
+}
+
+.contact-links img:hover {
+    filter: grayscale(0%);
+}
+
+
+
+
 .cv-header {
     display: flex;
     align-items: center;

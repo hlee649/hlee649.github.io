@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hohyun Henry Lee</title>
-    
 </head>
 
 <body>
@@ -18,30 +17,53 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("navbar").innerHTML = data;
-    
-                    // Now that navbar is loaded, highlight the active link
+
                     let currentPage = window.location.pathname.split("/").pop();
                     if (currentPage === "" || currentPage === "/") {
                         currentPage = "index.html"; // Default to index.html if empty
                     }
-    
+
                     let menuLinks = document.querySelectorAll(".menu a");
                     menuLinks.forEach(link => {
                         if (link.getAttribute("href") === currentPage) {
-                            link.classList.add("active"); // Apply 'active' class to the matching link
+                            link.classList.add("active");
                         }
                     });
                 })
                 .catch(error => console.error("Error loading navbar:", error));
         });
     </script>
-    
 
-<!-- Content Section -->
-<div class="content">
-    <h1>In progre-css......</h1>
-    <p>Halp!</p>
-</div>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-container">
+            <!-- Profile Picture -->
+            <img src="images/profile.jpg" alt="Hohyun Henry Lee" id="profile-pic">
+
+            <!-- Name & Bio -->
+            <h1>Hohyun (Henry) Lee</h1>
+            <p>Ph.D. in Mechanical Engineering | Therapeutic Ultrasound, Microbubbles, and Machine Learning</p>
+
+            <!-- Contact Links with Icons -->
+            <div class="contact-links">
+                <a href="mailto:hlee649@gatech.edu" target="_blank" title="Email">
+                    <img src="images/email-icon.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/hohyun-henry-lee-b66137243/" target="_blank" title="LinkedIn">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+                    <img src="images/scholar-icon.png" alt="Google Scholar">
+                </a>
+                <a href="https://github.com/hlee649" target="_blank" title="GitHub">
+                    <img src="images/github-icon.png" alt="GitHub">
+                </a>
+                <a href="projects.html" title="Curriculum Vitae">
+                    <img src="images/cv-icon.png" alt="CV">
+                </a>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

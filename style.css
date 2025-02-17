@@ -160,6 +160,7 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     width: 100%;
+    margin-left: -5px;
 }
 
 /* Brand Name (Text Button) */

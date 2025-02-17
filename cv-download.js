@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("download-pdf").addEventListener("click", function () {
-        const content = document.getElementById("cv-content").outerHTML; // Get full HTML structure
+        const content = document.getElementById("cv-content").outerHTML; // Get full CV content
 
         // Open a new window
         const newWindow = window.open("", "_blank");
@@ -15,12 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
                         <title>Hohyun Henry Lee - CV</title>
                         <style>
                             ${css}  /* Injects existing CSS */
-                            /* Manually ensure bullet points are removed */
+
+                            /* 🔹 Ensure proper spacing & formatting */
+                            body { font-family: Arial, sans-serif; padding: 40px; line-height: 1.6; }
+                            h1, h2 { text-align: left; margin-bottom: 20px; }
+                            hr { border: 1px solid #ccc; margin: 20px 0; }
+                            p, li { font-size: 16px; margin-bottom: 10px; }
                             ul { list-style-type: none !important; padding-left: 0 !important; }
                             li { text-indent: -30px !important; padding-left: 30px !important; }
-                            body { font-family: Arial, sans-serif; padding: 20px; }
-                            h2 { text-align: left; }
-                            hr { border: 1px solid #ccc; }
+                            .education-container, .cv-section { margin-bottom: 30px; } /* Ensures spacing between sections */
                         </style>
                     </head>
                     <body>

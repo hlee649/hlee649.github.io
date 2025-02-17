@@ -1,0 +1,79 @@
+{
+    "publications": [
+        {
+            "id": "J1",
+            "authors": "Guo, Y., Lee, H., Kim, C., Park, C., Yamamichi, A., Chuntova, P., Gallus, M., Bernabeu O. M., Okada, H., Jo, H., & Arvanitis, C.",
+            "title": "Ultrasound frequency-controlled microbubble dynamics in brain vessels regulate the enrichment of inflammatory pathways in the blood-brain barrier",
+            "year": "2024",
+            "doi": "https://doi.org/10.XXXXXX",
+            "journal": "Nature Communications"
+        },
+        {
+            "id": "J2",
+            "authors": "Zangabad, RP., Lee, H., Zhang, X., Kilinc M. S., Arvanitis, C., & Degertekin, F. L.",
+            "title": "A high sensitivity CMUT-based passive cavitation detector for monitoring microbubble dynamics during focused ultrasound interventions",
+            "year": "2024",
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "IEEE TUFFC"
+        },
+        {
+            "id": "J3",
+            "authors": "Lee, H., Guo, Y., Ross, J. L., Schoen Jr, S., Degertekin, F. L., & Arvanitis, C",
+            "title": "Spatially targeted brain cancer immunotherapy with closed-loop controlled focused ultrasound and immune checkpoint blockade",
+            "year": "2022",
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "Science Advances"
+        },
+        {
+            "id": "J4",
+            "authors": "Guo, Y., Lee, H., Fang, Z., Velalopoulou, A., Kim, J., ... & Arvanitis, C",
+            "title": "Single-cell analysis reveals effective siRNA delivery in brain tumors with microbubble-enhanced ultrasound and cationic nanoparticles",
+            "year": "2021",
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "Science Advances"
+        },
+        {
+            "id": "J5",
+            "authors": "Schoen Jr, S., Kilinc, M. S., Lee, H., Guo, Y., Degertekin, F. L., Woodworth, G. F., & Arvanitis, C.",
+            "title": "Towards controlled drug delivery in brain tumors with microbubble-enhanced focused ultrasound",
+            "year": "2022",
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "Advanced Drug Delivery Reviews"
+        }
+
+    ],
+    "conferences": [
+        {
+            "id": "C1",
+            "authors": "Jing, B., Lee, H., Dash, P., Arvanitis, C. D., & Lindsey, B. D.",
+            "title": "High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles",
+            "year": "2021",
+            "conference": "IEEE International Ultrasonics Symposium"
+        }
+    ],
+    "other_conferences": [
+        {
+            "id": "OC1",
+            "authors": "Alva, A., Kim, C., Lee, H., Arvanitis, C. D.",
+            "title": "Tracking macrophages with ultrasound for cancer diagnosis",
+            "year": "2023",
+            "conference": "28th European Symposium on Ultrasound Contrast Imaging"
+        }
+    ],
+    "awards": [
+        {
+            "id": "A1",
+            "name": "Best Graduate Teaching Assistant Award",
+            "organization": "Georgia Institute of Technology",
+            "year": "2024"
+        }
+    ],
+    "talks": [
+        {
+            "id": "I1",
+            "title": "Spatially Targeted Immunotherapy with closed loop control of focused ultrasound and immune checkpoint blockade therapy",
+            "event": "BRIC Hanbitsa Webinar",
+            "year": "2023"
+        }
+    ]
+}

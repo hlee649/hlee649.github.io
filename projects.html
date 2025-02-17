@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>CV - Hohyun Henry Lee</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
+    <!-- Navigation Bar -->
     <div id="navbar"></div>
 
     <script>
@@ -35,10 +34,43 @@
                 .catch(error => console.error("Error loading navbar:", error));
         });
     </script>
-    
 
-    <h1>Download my CV here</h1>
-    <p>Download malware</p>
-    <p><a href="index.html">Go back to Home</a></p>
+    <!-- CV Content -->
+    <div class="cv-container">
+        <h1>Curriculum Vitae</h1>
+
+        <section id="publications">
+            <h2>Journals</h2>
+            <hr>
+            <ul id="publication-list"></ul>
+        </section>
+
+        <section id="conferences">
+            <h2>Conferences</h2>
+            <hr>
+            <ul id="conference-list"></ul>
+        </section>
+
+        <section id="other-conferences">
+            <h2>Other Conference Presentations</h2>
+            <hr>
+            <ul id="other-conference-list"></ul>
+        </section>
+
+        <section id="awards">
+            <h2>Awards & Honors</h2>
+            <hr>
+            <ul id="award-list"></ul>
+        </section>
+
+        <section id="talks">
+            <h2>Invited Talks</h2>
+            <hr>
+            <ul id="talk-list"></ul>
+        </section>
+    </div>
+
+    <script src="cv.js"></script>
+
 </body>
 </html>

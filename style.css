@@ -1,3 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif; /* Applies sans-serif to everything */
+}
+
+
+.cv-container ul {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0;
+}
+
+.cv-container ul li {
+    padding: 5px 0;
+    text-indent: -30px; /* Moves text left to align with [J1] */
+    padding-left: 30px; /* Creates space for [J1] */
+}
+
+
+
 /* Navbar */
 .navbar {
     background-color: #333;
@@ -30,6 +49,7 @@
 .navbar .menu {
     display: flex;
     gap: 15px;
+    font-family: "Dancing Script", cursive;
 }
 
 /* Menu Links */

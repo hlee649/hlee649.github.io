@@ -180,7 +180,7 @@ body {
 .navbar .menu {
     display: flex;
     gap: 15px;
-    font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script";
 }
 
 /* Menu Links */

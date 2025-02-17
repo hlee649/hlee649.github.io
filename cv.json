@@ -34,6 +34,22 @@
             "year": 2022,
             "doi": "https://doi.org/10.YYYYYY",
             "journal": "Advanced Drug Delivery Reviews"
+        },
+
+        {
+            "authors": "*Alva, A., *Kim, C., *Premdas, P., *Ferry, Y., Lee, H., Lal, N., Bowen, J., Botchwey, E., Linsey, B., & Arvanitis, C.",
+            "title": "Imaging of macrophage accumulation in solid tumors with ultrasound",
+            "year": 0,
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "Under Revision"
+        },
+
+        {
+            "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., Premdas, P., Padmanabhan, S., Djeddar, N., Brynksin, A., Pandey, N., Anastasiadis, P., Kim, A., Woodworth, G. F., Felix, H., & Arvanitis C.",
+            "title": "Machine learning augmented closed-loop controlled focused ultrasound mediated blood-brain barrier opening improves drug delivery and liquid biopsy by expanding the treatment window",
+            "year": 0,
+            "doi": "https://doi.org/10.YYYYYY",
+            "journal": "In Preparation"
         }
 
     ],
@@ -191,6 +207,13 @@
             "title": "Tracking macrophages with ultrasound for cancer diagnosis",
             "year": 2023,
             "conference": "IEEE International Ultrasonics Symposium (IUS), Montreal, Canada"
+        },
+
+        {
+            "authors": "Menezes V., Lee, H., Arvanitis C. D.",
+            "title": "Monitoring of ultrasound targeted drug delivery with liquid biopsy",
+            "year": 2024,
+            "conference": "186th Meeting of the Acoustical Society of America (ASA), Ottawa, Canada"
         }
     ],
 

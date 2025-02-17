@@ -3,6 +3,48 @@ body {
     font-family: Arial, sans-serif; /* Applies sans-serif to everything */
 }
 
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-left: 1px;
+}
+
+.education-item {
+    display: flex;
+    align-items: stretch; /* Ensures all items stretch to the same height */
+    position: relative;
+}
+
+.education-year {
+    font-weight: normal;
+    width: 100px; /* Controls width of year section */
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.education-divider {
+    width: 2px; /* Width of vertical line */
+    background-color: #ccc; /* Line color */
+    height: 100%; /* Makes the line match the content height */
+    display: flex;
+}
+
+.education-content {
+    padding-left: 10px;
+    display: flex;
+    align-items: left;
+}
+
+.education-content ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
+}
+
 
 .cv-container ul {
     list-style-type: none; /* Removes default bullets */

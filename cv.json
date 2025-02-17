@@ -1,42 +1,37 @@
 {
     "publications": [
         {
-            "id": "J1",
             "authors": "Guo, Y., Lee, H., Kim, C., Park, C., Yamamichi, A., Chuntova, P., Gallus, M., Bernabeu O. M., Okada, H., Jo, H., & Arvanitis, C.",
             "title": "Ultrasound frequency-controlled microbubble dynamics in brain vessels regulate the enrichment of inflammatory pathways in the blood-brain barrier",
-            "year": "2024",
+            "year": 2024,
             "doi": "https://doi.org/10.XXXXXX",
             "journal": "Nature Communications"
         },
         {
-            "id": "J2",
             "authors": "Zangabad, RP., Lee, H., Zhang, X., Kilinc M. S., Arvanitis, C., & Degertekin, F. L.",
             "title": "A high sensitivity CMUT-based passive cavitation detector for monitoring microbubble dynamics during focused ultrasound interventions",
-            "year": "2024",
+            "year": 2024,
             "doi": "https://doi.org/10.YYYYYY",
             "journal": "IEEE TUFFC"
         },
         {
-            "id": "J3",
             "authors": "Lee, H., Guo, Y., Ross, J. L., Schoen Jr, S., Degertekin, F. L., & Arvanitis, C",
             "title": "Spatially targeted brain cancer immunotherapy with closed-loop controlled focused ultrasound and immune checkpoint blockade",
-            "year": "2022",
+            "year": 2022,
             "doi": "https://doi.org/10.YYYYYY",
             "journal": "Science Advances"
         },
         {
-            "id": "J4",
-            "authors": "Guo, Y., Lee, H., Fang, Z., Velalopoulou, A., Kim, J., ... & Arvanitis, C",
+            "authors": "Guo Y., Lee, H., Fang Z., Velalopoulou A., Kim J., Thomas M. B., Liu J., Abramowitz R. G., Kim Y., Coskun A. F., Krummel D. P., Sengupta S., MacDonald T. J., and Arvanitis C. D.",
             "title": "Single-cell analysis reveals effective siRNA delivery in brain tumors with microbubble-enhanced ultrasound and cationic nanoparticles",
-            "year": "2021",
+            "year": 2021,
             "doi": "https://doi.org/10.YYYYYY",
             "journal": "Science Advances"
         },
         {
-            "id": "J5",
             "authors": "Schoen Jr, S., Kilinc, M. S., Lee, H., Guo, Y., Degertekin, F. L., Woodworth, G. F., & Arvanitis, C.",
             "title": "Towards controlled drug delivery in brain tumors with microbubble-enhanced focused ultrasound",
-            "year": "2022",
+            "year": 2022,
             "doi": "https://doi.org/10.YYYYYY",
             "journal": "Advanced Drug Delivery Reviews"
         }
@@ -44,36 +39,253 @@
     ],
     "conferences": [
         {
-            "id": "C1",
-            "authors": "Jing, B., Lee, H., Dash, P., Arvanitis, C. D., & Lindsey, B. D.",
-            "title": "High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles",
-            "year": "2021",
-            "conference": "IEEE International Ultrasonics Symposium"
+            "authors": "Lee, H., Menezes, V., Baseman, C., Kim, J., Premdas, P., Padmanabhan, S., & Arvanitis C. D.",
+            "title": "Machine learning-enhanced closed-loop focused ultrasound for targeted drug delivery in the brain",
+            "year": 2024,
+            "conference": "23rd Annual International Symposium on Therapeutic Ultrasound (ISTU), Taipei, Taiwan"
+        },
+        {
+            "authors": "Lee, H., Menezes, V., Baseman, C., Kim, J., Premdas, P., Padmanabhan, S., & Arvanitis C. D.",
+            "title": "Machine learning-supported closed-loop focused ultrasound for targeted drug delivery in the brain",
+            "year": 2024,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Taipei, Taiwan"
+        },
+        {
+            "authors": "Lee, H., Zangabad, R. P., Degertekin, F. L., & Arvanitis C. D.",
+            "title": "Estimation of microbubble oscillation radius from acoustic emission using machine learning-informed linear acoustics theory",
+            "year": 2024,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Taipei, Taiwan"
+        },
+
+        {
+            "authors": "Lee, H., Guo, Y., Ross, J., Schoen Jr, S. J., Degertekin, F. L., Arvanitis, C. D.",
+            "title": "Spatially targeted immunotherapy in glioma with closed-loop microbubble enhanced focused ultrasound control",
+            "year": 2023,
+            "conference": "22nd Annual International Symposium on Therapeutic Ultrasound (ISTU), Lyon, France"
+        },
+
+        {
+            "authors": "Lee, H., & Arvanitis C. D.",
+            "title": "Linear estimation of microbubble oscillation radius from Acoustic emission",
+            "year": 2024,
+            "conference": "186th Meeting of the Acoustical Society of America (ASA), Ottawa, Canada"
+        },
+
+        {
+            "authors": "Lee, H., Guo Y., Ross J., Schoen Jr S. J., Degertekin F. L., Arvanitis C. D.",
+            "title": "Closed-loop controlled microbubble-enhanced focused ultrasound promotes safe and effective immune checkpoint targeted therapy in glioma",
+            "year": 2022,
+            "conference": "8th International Symposium on Focused Ultrasound (FUS Foundation), Bethesda, MD, USA"
+        },
+
+        {
+            "authors": "Lee, H., Guo Y., Ross J., Schoen Jr S. J., Degertekin F. L., Arvanitis C. D.",
+            "title": "Immune checkpoint targeted therapy in glioma with closed-loop microbubble-enhanced focused ultrasound",
+            "year": 2022,
+            "conference": "21st Annual International Symposium for Therapeutic Ultrasound (ISTU), Toronto, Canada"
+        },
+
+        {
+            "authors": "Lee, H., Guo Y., Schoen Jr S. J., Degertekin F. L., Arvanitis C. D.",
+            "title": "Acoustic emission based closed-loop focused ultrasound system for targeted and controlled BBB-opening in rodents",
+            "year": 2021,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Virtual"
+        },
+
+        {
+            "authors": "Lee, H., Schoen Jr S. J., Guo Y., Arvanitis C. D.",
+            "title": "Closed-loop microbubble enhanced focused ultrasound system for controlled and targeted BBB opening",
+            "year": 2021,
+            "conference": "20th Annual International Symposium for Therapeutic Ultrasound (ISTU), Gyeongju, South Korea"
+        },
+
+        {
+            "authors": "Lee, H., Schoen Jr S. J., Guo Y., Arvanitis C. D.",
+            "title": "A Closed-loop Focused Ultrasound System for Controlled and Targeted Antibody Delivery in Central Nervous System",
+            "year": 2021,
+            "conference": "2021 Annual AIUM Meeting, Virtual"
+        },
+
+        {
+            "authors": "Lee, H., Schoen Jr S. J., Guo Y., Kim C., Arvanitis C. D.",
+            "title": "A Benchtop focused ultrasound system for drug screening investigations in central nervous system",
+            "year": 2020,
+            "conference": "7th International Symposium on Focused Ultrasound (FUS Foundation), Virtual"
+        },
+
+        {
+            "authors": "Lee, H., Schoen Jr S. J., Guo Y., Kim C., Arvanitis C. D.",
+            "title": "Autonomous ultrasound system for targeted drug delivery in central nervous system with sub-millimeter targeting accuracy, in 2020 IEEE International Ultrasonics Symposium",
+            "year": 2020,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Las Vegas, NV, USA"
+        },
+
+        {
+            "authors": "Lee, H., Schoen Jr S. J., Arvanitis C. D.",
+            "title": "Automatic focused ultrasound system for targeted drug delivery in central nervous system",
+            "year": 2018,
+            "conference": "6th International Symposium on Focused Ultrasound (FUS Foundation), Reston, VA, USA"
+        },
+
+        {
+            "authors": "Lee, H., Menezes, V., Kim, C., Baseman, C., Kim, J., Premdas, P., Padmanabhan, S., & Arvanitis C. D.",
+            "title": "Data-driven microbubble dynamics characterization and control for targeted drug delivery in the brain",
+            "year": 2025,
+            "conference": "30th European Symposium on Ultrasound Contrast Imaging, Rotterdam, Netherlands"
+        },
+
+        {
+            "authors": "Lee, H., Degertekin, F. L., & Arvanitis C. D.",
+            "title": "Real-time radius estimation of oscillating microbubble based on linear acoustic wave propagation and superposition framework",
+            "year": 2023,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Montreal, Canada"
         }
+
+
     ],
     "other_conferences": [
         {
-            "id": "OC1",
             "authors": "Alva, A., Kim, C., Lee, H., Arvanitis, C. D.",
             "title": "Tracking macrophages with ultrasound for cancer diagnosis",
-            "year": "2023",
-            "conference": "28th European Symposium on Ultrasound Contrast Imaging"
+            "year": 2023,
+            "conference": "28th European Symposium on Ultrasound Contrast Imaging, Rotterdam, Netherlands"
+        },
+
+        {
+            "authors": "Menezes V., Lee, H., Guo Y., Bryksin A., Arvanitis C. D.",
+            "title": "Assessment of chemotherapy cytotoxic activity in brain tumors with cancer soluble biomarkers",
+            "year": 2022,
+            "conference": "8th International Symposium on Focused Ultrasound (FUS Foundation), Bethesda, MD, USA"
+        },
+
+        {
+            "authors": "Guo Y., Lee, H., Arvanitis C. D.",
+            "title": "Microbubble shell properties and ultrasound excitation frequency can modulate the blood-brain barrier phenotype",
+            "year": 2022,
+            "conference": "2022 Annual AIUM Meeting, San Diego, CA, USA"
+        },
+
+        {
+            "authors": "Guo Y., Lee, H., Arvanitis C. D.",
+            "title": "Microbubble properties and ultrasound frequency can modulate the blood-brain barrier phenotype",
+            "year": 2022,
+            "conference": "8th International Symposium on Focused Ultrasound (FUS Foundation), Bethesda, MD, USA"
+        },
+
+        {
+            "authors": "Guo Y., Lee, H., Arvanitis C. D.",
+            "title": "Microbubble shell properties and ultrasound excitation frequency can modulate the blood-brain barrier phenotype",
+            "year": 2021,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Virtual"
+        },
+
+        {
+            "authors": "Guo Y., Lee, H., Fang Z., Velalopoulou A., Kim J., Thomas M. B., Liu J., Abramowitz R. G., Kim Y., Coskun A. F., Krummel D. P., Sengupta S., MacDonald T. J., and Arvanitis C. D.",
+            "title": "SMO protein depletion in SHH medulloblastomas using microbubble-enhanced ultrasound and siRNA loaded cationic nanoparticles",
+            "year": 2021,
+            "conference": "SNO Pediatric Neuro-Oncology Research Conference"
+        },
+
+        {
+            "authors": "Alva, A., Kim, C., Lee, H., Arvanitis, C. D.",
+            "title": "Tracking macrophages with ultrasound for cancer diagnosis",
+            "year": 2023,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Montreal, Canada"
         }
     ],
+
     "awards": [
         {
-            "id": "A1",
             "name": "Best Graduate Teaching Assistant Award",
             "organization": "Georgia Institute of Technology",
-            "year": "2024"
+            "year": 2024
+        },
+
+        {
+            "name": "Student Registration Award",
+            "organization": "2023 International Symposium for Therapeutic Ultrasound",
+            "year": 2024
+        },
+
+        {
+            "name": "Provost's Award",
+            "organization": "Georgia Institute of Technology, CRIDC competition",
+            "year": 2021
+        },
+
+        {
+            "name": "Global Scholar's Award",
+            "organization": "7th International Symposium on Focused Ultrasound (FUS Foundation)",
+            "year": 2020
+        },
+
+        {
+            "name": "Finalist",
+            "organization": "Georgia Tech 3-Minute Thesis Competition",
+            "year": 2021
+        },
+
+        {
+            "name": "FUSF Global Internship Award",
+            "organization": "Focused Ultrasound Foundation",
+            "year": 2019
+        },
+        {
+            "name": "FUSF Global Internship Award",
+            "organization": "Focused Ultrasound Foundation",
+            "year": 2018
+        },
+        {
+            "name": "Faculty Honor and Deans List (2016-2019)",
+            "organization": "Georgia Institute of Technology",
+            "year": 2016
         }
+
     ],
     "talks": [
         {
-            "id": "I1",
             "title": "Spatially Targeted Immunotherapy with closed loop control of focused ultrasound and immune checkpoint blockade therapy",
             "event": "BRIC Hanbitsa Webinar",
-            "year": "2023"
+            "year": 2023
+        },
+
+        {
+            "title": "Spatially targeted immunotherapy with focused ultrasound and microbubble dynamics control",
+            "event": "Georgia Tech BME Trainee Seminar",
+            "year": 2023
         }
-    ]
+    ],
+
+
+        "conference_proceedings": [
+            {
+                "authors": "Jing, B., Lee, H., Dash, P., Arvanitis, C. D., & Lindsey, B. D.",
+                "title": "High contrast ultrasound imaging of very low frequency (100 kHz) modulated microbubbles",
+                "year": 2021,
+                "conference": "2021 IEEE International Ultrasonics Symposium (IUS)"
+            },
+          {
+            "title": "Dual mode CMUT array operation for skull imaging and passive acoustic monitoring in transcranial ultrasound",
+            "authors": "Kilinc, M. S., Lee, H., Arvanitis, C. D., & Degertekin, F. L.",
+            "conference": "2021 IEEE International Ultrasonics Symposium (IUS) ",
+            "year": 2021
+          }
+        ],
+
+        "patents": [
+            {
+                "inventors": "Lee, H., Menezes, V., & Arvanitis, C.D",
+                "title": "Machine learning methods to control microbubble dynamics",
+                "year": 2024,
+                "patent_number": "63/694,934, PPA Filed Sep."
+            },
+
+            {
+                "inventors": "Lee, H. & Arvanitis, C.D",
+                "title": "Acoustical method for microbubble oscillatory radius esimation and acoustic emission detection",
+                "year": 2024,
+                "patent_number": "18/281,711, ORD Filed Aug."
+            }
+        ]
+      
 }

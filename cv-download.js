@@ -1,6 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("download-pdf").addEventListener("click", function () {
-        const element = document.getElementById("cv-content"); // Selects CV content
+    console.log("✅ Script Loaded: cv-download.js");
+
+    const downloadButton = document.getElementById("download-pdf");
+    if (!downloadButton) {
+        console.error("❌ Download button not found!");
+        return;
+    }
+
+    downloadButton.addEventListener("click", function () {
+        console.log("✅ Download button clicked!");
+
+        const element = document.getElementById("cv-content");
+        if (!element) {
+            console.error("❌ CV content section not found!");
+            return;
+        }
+
+        console.log("📄 Generating PDF...");
         html2pdf()
             .set({
                 margin: 10,
@@ -10,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 jsPDF: { format: 'a4', orientation: 'portrait' }
             })
             .from(element)
-            .save();
+            .save()
+            .then(() => console.log("✅ PDF Downloaded Successfully"))
+            .catch(err => console.error("❌ PDF Generation Error:", err));
     });
 });

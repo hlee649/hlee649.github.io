@@ -3,6 +3,41 @@ body {
     font-family: Arial, sans-serif; /* Applies sans-serif to everything */
 }
 
+.cv-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes button to the right */
+    gap: 15px; /* Adds spacing between header and button */
+}
+
+.download-btn {
+    background-color: #ff6600; /* Orange background */
+    color: white; /* White text */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.download-btn:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.download-btn:active {
+    background-color: #993d00; /* Even darker when clicked */
+    transform: scale(0.98);
+}
+
+
+
 .education-container {
     display: flex;
     flex-direction: column;

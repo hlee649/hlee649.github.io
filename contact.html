@@ -13,7 +13,6 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Load the navbar first
             fetch("navbar.html")
                 .then(response => response.text())
                 .then(data => {
@@ -36,14 +35,6 @@
         });
     </script>
     
-
-    <script>
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
 
     <h1>Contact Me</h1>
     <p>hlee649@gatech.edu</p>

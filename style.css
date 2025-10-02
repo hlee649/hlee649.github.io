@@ -57,8 +57,20 @@ body {
 .cv-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pushes button to the right */
-    gap: 15px; /* Adds spacing between header and button */
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Email muted but visible */
+.cv-header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.cv-header .muted {
+    font-size: 16px;
+    color: #666;   /* muted gray */
+    font-weight: normal;
 }
 
 .download-btn {
@@ -92,10 +104,11 @@ body {
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1px;  /* tighter spacing between entries */
     position: relative;
     padding-left: 1px;
 }
+
 
 .education-item {
     display: flex;
@@ -107,7 +120,7 @@ body {
     font-weight: normal;
     width: 100px; /* Controls width of year section */
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -131,6 +144,14 @@ body {
     padding-left: 20px;
 }
 
+/* Center CV container on projects.html */
+.cv-container {
+    max-width: 8.5in;       /* keep it readable, like a PDF page */
+    margin: 40px auto;      /* center horizontally + some top/bottom space */
+    background: #fff;       /* optional: white background */
+    border-radius: 6px;     /* optional rounded edges */
+}
+
 
 .cv-container ul {
     list-style-type: none; /* Removes default bullets */
@@ -144,7 +165,17 @@ body {
 }
 
 .cv-container h2 {
-    color: #008080;
+    color: #ff7043;
+}
+
+/* Tighter spacing between headers and horizontal rule */
+.cv-container h2 {
+  margin-bottom: 4px;   /* reduce gap below header */
+}
+
+.cv-container hr {
+  margin-top: 4px;      /* reduce gap above line */
+  margin-bottom: 12px;  /* keep some space after line */
 }
 
 
@@ -224,4 +255,38 @@ body {
         padding: 10px;
         font-size: 14px;
     }
+}
+
+/* Tighter layout ONLY in Education section */
+#education .education-container {
+    gap: 4px;  /* smaller gap between degree blocks */
+}
+
+#education .education-content ul li {
+    padding: 0px 0;  /* shrink line spacing inside each block */
+    margin: 0;       /* remove extra default margin */
+}
+
+
+/* Muted text style */
+.muted {
+  color: #666;   /* softer gray than body text (#222 or black) */
+  font-style: italic; /* optional: makes it look subtle */
+}
+
+/* Specific: Education years */
+.education-year {
+  color: #666;   /* muted gray */
+  font-weight: normal; /* keep light */
+}
+
+/* Metadata muted across CV */
+#conference-list li i,
+#other-conference-list li i,
+#award-list li i,
+#publication-list i,
+#conference-proceedings-list i,
+#patent-list i,
+#talk-list li {
+  color: #666;   /* muted gray */
 }

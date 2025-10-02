@@ -4,52 +4,52 @@
             "authors": "Guo, Y., Lee, H., Kim, C., Park, C., Yamamichi, A., Chuntova, P., Gallus, M., Bernabeu O. M., Okada, H., Jo, H., & Arvanitis, C.",
             "title": "Ultrasound frequency-controlled microbubble dynamics in brain vessels regulate the enrichment of inflammatory pathways in the blood-brain barrier",
             "year": 2024,
-            "doi": "https://doi.org/10.XXXXXX",
+            "doi": "https://doi.org/10.1038/s41467-024-52329-y",
             "journal": "Nature Communications"
         },
         {
             "authors": "Zangabad, RP., Lee, H., Zhang, X., Kilinc M. S., Arvanitis, C., & Degertekin, F. L.",
             "title": "A high sensitivity CMUT-based passive cavitation detector for monitoring microbubble dynamics during focused ultrasound interventions",
             "year": 2024,
-            "doi": "https://doi.org/10.YYYYYY",
+            "doi": "10.1109/TUFFC.2024.3436918",
             "journal": "IEEE TUFFC"
         },
         {
             "authors": "Lee, H., Guo, Y., Ross, J. L., Schoen Jr, S., Degertekin, F. L., & Arvanitis, C",
             "title": "Spatially targeted brain cancer immunotherapy with closed-loop controlled focused ultrasound and immune checkpoint blockade",
             "year": 2022,
-            "doi": "https://doi.org/10.YYYYYY",
+            "doi": "10.1126/sciadv.add2288",
             "journal": "Science Advances"
         },
         {
             "authors": "Guo Y., Lee, H., Fang Z., Velalopoulou A., Kim J., Thomas M. B., Liu J., Abramowitz R. G., Kim Y., Coskun A. F., Krummel D. P., Sengupta S., MacDonald T. J., and Arvanitis C. D.",
             "title": "Single-cell analysis reveals effective siRNA delivery in brain tumors with microbubble-enhanced ultrasound and cationic nanoparticles",
             "year": 2021,
-            "doi": "https://doi.org/10.YYYYYY",
+            "doi": "10.1126/sciadv.abf7390",
             "journal": "Science Advances"
         },
         {
             "authors": "Schoen Jr, S., Kilinc, M. S., Lee, H., Guo, Y., Degertekin, F. L., Woodworth, G. F., & Arvanitis, C.",
             "title": "Towards controlled drug delivery in brain tumors with microbubble-enhanced focused ultrasound",
             "year": 2022,
-            "doi": "https://doi.org/10.YYYYYY",
+            "doi": "https://doi.org/10.1016/j.addr.2021.114043",
             "journal": "Advanced Drug Delivery Reviews"
         },
 
         {
             "authors": "*Alva, A., *Kim, C., *Premdas, P., *Ferry, Y., Lee, H., Lal, N., Bowen, J., Botchwey, E., Linsey, B., & Arvanitis, C.",
             "title": "Imaging of macrophage accumulation in solid tumors with ultrasound",
-            "year": 0,
-            "doi": "https://doi.org/10.YYYYYY",
-            "journal": "Under Revision"
+            "year": 2025,
+            "doi": "https://doi.org/10.1038/s41467-025-61624-1",
+            "journal": "Nature Communications"
         },
 
         {
             "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., Premdas, P., Padmanabhan, S., Djeddar, N., Brynksin, A., Pandey, N., Anastasiadis, P., Kim, A., Woodworth, G. F., Felix, H., & Arvanitis C.",
-            "title": "Machine learning augmented closed-loop controlled focused ultrasound mediated blood-brain barrier opening improves drug delivery and liquid biopsy by expanding the treatment window",
-            "year": 0,
-            "doi": "https://doi.org/10.YYYYYY",
-            "journal": "In Preparation"
+            "title": "Data-driven feedback identifies focused ultrasound exposure regimens for improved nanotheranostic targeting of the brain",
+            "year": 2025,
+            "doi": "https://doi.org/10.1101/2025.05.01.651328",
+            "journal": "Under Revision in Advanced Science, Preprint available at BioRxiv"
         }
 
     ],

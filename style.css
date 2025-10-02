@@ -183,6 +183,7 @@ body {
 
 
 
+
 /* Navbar */
 .navbar {
     background-color: #333;
@@ -289,4 +290,9 @@ body {
 #patent-list i,
 #talk-list li {
   color: #666;   /* muted gray */
+}
+
+#experience .muted {
+  color: #666;
+  font-style: italic;
 }

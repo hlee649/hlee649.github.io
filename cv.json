@@ -317,6 +317,59 @@
                 "year": 2024,
                 "patent_number": "18/281,711, US Patent"
             }
-        ]
+        ],
+
+        "experience": [
+            {
+                "role": "Postdoctoral Fellow",
+                "organization": "Ultrasound Biophysics & Bioengineering Lab",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2025–Present",
+                "description": "Research on machine learning assisted closed-loop ultrasound therapy, mentoring graduate and undergraduate students, and leading collaborative projects."
+            },
+            {
+                "role": "Graduate Research Assistant",
+                "organization": "Ultrasound Biophysics & Bioengineering Lab",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2019–2024",
+                "description": "Focused on microbubble dynamics monitoring and control methods for brain cancer therapy."
+            },
+            {
+                "role": "Graduate Teaching Assistant",
+                "organization": "Acoustics I (ME 6760)",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2022, 2024",
+                "description": "Led graduate level Problem Solving Studios to tackle Ph.D. Qualification Exam-level Acoustics Problems. Received Best Graduate Teaching Assistant Award in 2024"
+            },
+            {
+                "role": "Undergraduate Research Assistant",
+                "organization": "Ultrasound Biophysics & Bioengineering Lab",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2017–2019",
+                "description": " Utilized MATLAB and image processing to develop ultrasound-guided focused ultrasound system (USgFUS) and accompanying UI designs in controlling multiple hardwares (e.g., oscilloscope, 3D positioning system, and function generators) "
+            },
+            {
+                "role": "Vertically Integrated Project",
+                "organization": "VIP",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2017",
+                "description": "Developed and simulated PID control algorithms for remote underwater submarine operation."
+            },
+            {
+                "role": "Undergraduate Teaching Assistant",
+                "organization": "Fluid Dynamics (ME 3340) & Numerical Methods (ME 2016)",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2017–2019",
+                "description": "Led office hours offering guidance on students' problem-solving. Assisted instructor in grading and providing constructive feedback on assignments"
+            },
+            {
+                "role": "MP Strike Force",
+                "organization": "Republic of Korea Air Force (ROKAF)",
+                "location": "ROK Air Force 16th Fighter Wing",
+                "year": "2014–2016",
+                "description": "Executed rapid deployment operations for base defense, law enforcement, and crisis management. Developed discipline, teamwork, and leadership skills in high-pressure environments."
+            }
+            ]
+   
       
 }

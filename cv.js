@@ -101,6 +101,18 @@ function displayCVData(data) {
         patentList.appendChild(listItem);
     });
 
+    let expList = document.getElementById("experience-list");
+    data.experience.forEach((exp, index) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = `
+        <strong>${exp.role}</strong> — ${exp.organization} <br>
+        <span class="muted">${exp.location} | ${exp.year}</span><br>
+        <span>${exp.description}</span>
+    `;
+    expList.appendChild(listItem);
+    });
+
+
 
 }
 

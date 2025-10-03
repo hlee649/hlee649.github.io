@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hohyun Henry Lee</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hohyun Henry Lee</title>
+
+  <!-- Optional: modern menu font (keeps your brand script if you use it) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div id="navbar"></div>
+  <!-- Navbar (loaded via navbar.html) -->
+  <div id="navbar"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("navbar.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("navbar.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("navbar").innerHTML = data;
+          let currentPage = window.location.pathname.split("/").pop();
+          if (currentPage === "" || currentPage === "/") currentPage = "index.html";
+          document.querySelectorAll(".menu a").forEach(a => {
+            if (a.getAttribute("href") === currentPage) a.classList.add("active");
+          });
+        })
+        .catch(err => console.error("Error loading navbar:", err));
+    });
+  </script>
 
-                    let currentPage = window.location.pathname.split("/").pop();
-                    if (currentPage === "" || currentPage === "/") {
-                        currentPage = "index.html"; // Default to index.html if empty
-                    }
+  <!-- Business Card -->
+  <main class="bc-wrap">
+<main class="bc-wrap">
+  <section class="business-card" aria-label="Digital business card">
+    <div class="bc-left">
+      <img src="images/profile.jpg" alt="Hohyun Henry Lee" id="profile-pic" />
+    </div>
 
-                    let menuLinks = document.querySelectorAll(".menu a");
-                    menuLinks.forEach(link => {
-                        if (link.getAttribute("href") === currentPage) {
-                            link.classList.add("active");
-                        }
-                    });
-                })
-                .catch(error => console.error("Error loading navbar:", error));
-        });
-    </script>
+    <div class="bc-right">
+      <h1 class="bc-name">Hohyun (Henry) Lee, Ph.D.</h1>
+      <p class="bc-title">Therapeutic Ultrasound · Microbubbles · Machine Learning</p>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-container">
-            <!-- Profile Picture -->
-            <img src="images/profile.jpg" alt="Hohyun Henry Lee" id="profile-pic">
+      <div class="bc-meta">
+        <a class="bc-line" href="mailto:hlee649@gatech.edu">hlee649@gatech.edu</a>
+        <span class="bc-sep">•</span>
+        <span class="bc-line">Atlanta, GA</span>
+      </div>
 
-            <!-- Name & Bio -->
-            <h1>Hohyun (Henry) Lee, Ph.D.</h1>
-            <p>Ph.D. in Mechanical Engineering | Therapeutic Ultrasound, Microbubbles, and Machine Learning</p>
+      <!-- Contact Icons -->
+      <div class="bc-icons">
+        <a href="mailto:hlee649@gatech.edu" target="_blank" title="Email">
+          <img src="images/email-icon.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/hohyun-henry-lee-b66137243/" target="_blank" title="LinkedIn">
+          <img src="images/linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+          <img src="images/scholar-icon.png" alt="Google Scholar">
+        </a>
+        <a href="https://github.com/hlee649" target="_blank" title="GitHub">
+          <img src="images/github-icon.png" alt="GitHub">
+        </a>
+        <a href="projects.html" title="Curriculum Vitae">
+          <img src="images/cv-icon.png" alt="CV">
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
 
-            <!-- Contact Links with Icons -->
-            <div class="contact-links">
-                <a href="mailto:hlee649@gatech.edu" target="_blank" title="Email">
-                    <img src="images/email-icon.png" alt="Email">
-                </a>
-                <a href="https://www.linkedin.com/in/hohyun-henry-lee-b66137243/" target="_blank" title="LinkedIn">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
-                    <img src="images/scholar-icon.png" alt="Google Scholar">
-                </a>
-                <a href="https://github.com/hlee649" target="_blank" title="GitHub">
-                    <img src="images/github-icon.png" alt="GitHub">
-                </a>
-                <a href="projects.html" title="Curriculum Vitae">
-                    <img src="images/cv-icon.png" alt="CV">
-                </a>
-            </div>
-        </div>
-    </section>
 
 </body>
 </html>

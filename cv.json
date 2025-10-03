@@ -1,7 +1,7 @@
 {
     "publications": [
         {
-            "authors": "Guo, Y., Lee, H., Kim, C., Park, C., Yamamichi, A., Chuntova, P., Gallus, M., Bernabeu O. M., Okada, H., Jo, H., & Arvanitis, C.",
+            "authors": "Guo, Y., Lee, H., Kim, C., Park, C., Yamamichi, A., ... , Okada, H., Jo, H., & Arvanitis, C.",
             "title": "Ultrasound frequency-controlled microbubble dynamics in brain vessels regulate the enrichment of inflammatory pathways in the blood-brain barrier",
             "year": 2024,
             "doi": "https://doi.org/10.1038/s41467-024-52329-y",
@@ -22,7 +22,7 @@
             "journal": "Science Advances"
         },
         {
-            "authors": "Guo Y., Lee, H., Fang Z., Velalopoulou A., Kim J., Thomas M. B., Liu J., Abramowitz R. G., Kim Y., Coskun A. F., Krummel D. P., Sengupta S., MacDonald T. J., and Arvanitis C. D.",
+            "authors": "Guo Y., Lee, H., Fang Z., Velalopoulou A., Kim J., Thomas M. B., Liu J., ... , MacDonald T. J., & Arvanitis C.",
             "title": "Single-cell analysis reveals effective siRNA delivery in brain tumors with microbubble-enhanced ultrasound and cationic nanoparticles",
             "year": 2021,
             "doi": "10.1126/sciadv.abf7390",
@@ -37,7 +37,7 @@
         },
 
         {
-            "authors": "*Alva, A., *Kim, C., *Premdas, P., *Ferry, Y., Lee, H., Lal, N., Bowen, J., Botchwey, E., Linsey, B., & Arvanitis, C.",
+            "authors": "*Alva, A., *Kim, C., *Premdas, P., *Ferry, Y., Lee, H., Lal, N., Bowen, J., Botchwey, E., Linsey, B., Arvanitis, C.",
             "title": "Imaging of macrophage accumulation in solid tumors with ultrasound",
             "year": 2025,
             "doi": "https://doi.org/10.1038/s41467-025-61624-1",
@@ -45,7 +45,7 @@
         },
 
         {
-            "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., Padmanabhan, S., Premdas, P., Djeddar, N., Brynksin, A., Pandey, N., Anastasiadis, P., Kim, A., MacDonald T. J., Bettegowda, C., Woodworth, G. F., Felix, H., & Arvanitis C.",
+            "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., ... , Woodworth, G. F., Felix, H., & Arvanitis C.",
             "title": "Data-driven feedback identifies focused ultrasound exposure regimens for improved nanotheranostic targeting of the brain",
             "year": 2025,
             "doi": "https://doi.org/10.1101/2025.05.01.651328",

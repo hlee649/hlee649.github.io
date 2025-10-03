@@ -309,3 +309,129 @@ body {
   color: #666;
   font-style: italic;
 }
+
+/* ==== Business Card Wrapper (below navbar) ==== */
+.bc-wrap {
+  display: flex;
+  justify-content: center;     /* horizontally center */
+  align-items: flex-start;     /* stick to top instead of centering */
+  padding: 40px 16px;          /* space below navbar */
+  background: #f5f6f7;
+  min-height: calc(100dvh - 60px); /* still covers viewport height, minus navbar */
+}
+
+
+/* Fluid card with responsive grid */
+.business-card {
+  display: grid;
+  grid-template-columns: minmax(96px, 15vw) 1fr;        /* image column scales with width */
+  gap: clamp(12px, 3vw, 50px);
+  width: min(100%, 960px);                               /* max width cap */
+  background: #fff;
+  border-radius: clamp(8px, 1.2vw, 14px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: clamp(16px, 3vw, 28px);
+}
+
+.bc-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.bc-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background-color: #ddd;
+}
+
+
+
+/* Make profile pic scale fluidly but stay circular */
+#profile-pic {
+  width: clamp(84px, 18vw, 170px);
+  height: clamp(84px, 18vw, 170px);
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.bc-right {
+  display: grid;
+  align-content: center;
+  gap: clamp(6px, 1.2vw, 10px);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #222;
+  padding-left: 20px;           /* space away from the border */
+}
+
+
+/* Fluid typography */
+.bc-name {
+  margin: 0;
+  font-size: clamp(20px, 3.2vw, 32px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+.bc-title {
+  margin: 0;
+  color: #666;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Meta line (email · location) */
+.bc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(6px, 1vw, 10px);
+  align-items: center;
+  color: #666;
+  font-size: clamp(13px, 1.6vw, 16px);
+}
+.bc-line { text-decoration: none; color: inherit; }
+.bc-line:hover { text-decoration: underline; }
+.bc-sep { opacity: 0.6; }
+
+/* Icon row (kept from your site, but responsive) */
+.bc-icons {
+  display: flex;
+  gap: clamp(10px, 1.6vw, 16px);
+  margin-top: clamp(8px, 1.6vw, 14px);
+  flex-wrap: wrap;
+}
+/* Force icons into black/white (monochrome) */
+.bc-icons a img {
+  width: clamp(24px, 3.6vw, 36px);
+  height: clamp(24px, 3.6vw, 36px);
+  filter: grayscale(100%) brightness(0);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Optional hover effect: lighten slightly */
+.bc-icons a:hover img {
+  transform: translateY(-2px);
+  filter: grayscale(100%) brightness(0.3); 
+}
+
+
+/* Small screens: stack vertically and center text/icons */
+@media (max-width: 720px) {
+  .business-card {
+    grid-template-columns: 1fr;   /* stack */
+    text-align: center;
+  }
+  .bc-meta { justify-content: center; }
+  .bc-icons { justify-content: center; }
+  .bc-left { margin-bottom: 6px; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bc-icons a img { transition: none; }
+}
+

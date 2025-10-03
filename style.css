@@ -189,16 +189,20 @@ body {
     background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* keep logo on the left, don't spread to edges */
+    justify-content: flex-start;                 /* changed from space-between */
     padding: 10px 20px;
     width: 100%;
     margin-left: -10px;
     margin-top: -5px;
+
+    /* enable absolute centering for the menu */
+    position: relative;                          /* NEW */
 }
 
 /* Brand Name (Text Button) */
 .navbar .brand-name {
-    font-family: "Dancing Script";
+    font-family: "Arial";
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -206,21 +210,27 @@ body {
     transition: color 0.3s, background-color 0.3s;
     margin-left: -20px;
     font-size: clamp(minpx, 3vw, maxpx);
+    position: relative;                          /* ensures it sits above the menu if overlapping */
+    z-index: 2;                                   /* NEW */
 }
 
 /* Hover Effect */
 .navbar .brand-name:hover {
     color: orange;
-    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
-/* Menu */
+/* Menu — centered across the whole navbar */
 .navbar .menu {
     display: flex;
     gap: 15px;
-    font-family: "Dancing Script";
+    font-family: "Arial";
     font-size: clamp(minpx, 3vw, maxpx);
+
+    position: absolute;                          /* NEW */
+    left: 50%;                                    /* NEW */
+    transform: translateX(-50%);                  /* NEW */
 }
 
 /* Menu Links */
@@ -242,14 +252,17 @@ body {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-direction: column;                   /* stack logo and menu */
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar .menu {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        position: static;                         /* let it flow under the logo on small screens */
+        transform: none;
+        margin-top: 6px;
+        flex-wrap: wrap;
+        justify-content: center;                  /* keep items centered */
     }
 
     .navbar a {

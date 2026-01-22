@@ -487,3 +487,10 @@ body {
   white-space: nowrap;     /* keep whole link on one line */
   text-decoration: underline;
 }
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

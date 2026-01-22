@@ -112,6 +112,32 @@ function displayCVData(data) {
     expList.appendChild(listItem);
     });
 
+    // Mentoring
+    let mentoringList = document.getElementById("mentoring-list");
+    data.mentoring?.forEach((m, index) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = `
+        <strong>[M${index + 1}] ${m.role}</strong>${m.mentee_level ? ` — ${m.mentee_level}` : ""}<br>
+        <i>${m.context ? `${m.context}, ` : ""}${m.year}</i><br>
+        ${m.description ? `${m.description}` : ""}
+    `;
+    mentoringList.appendChild(listItem);
+    });
+
+    // Professional Service
+    let serviceList = document.getElementById("professional-service-list");
+    data.professional_service?.forEach((s, index) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = `
+        <strong>[S${index + 1}] ${s.role}</strong><br>
+        <i>${s.venue}${s.location ? `, ${s.location}` : ""}, ${s.year}</i><br>
+        ${s.description ? `${s.description}` : ""}
+    `;
+    serviceList.appendChild(listItem);
+    });
+
+
+
 
 
 }

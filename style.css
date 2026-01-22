@@ -333,12 +333,13 @@ body {
   padding: clamp(16px, 3vw, 28px);
 }
 
+/* Default (desktop/tablet): vertical divider */
 .bc-left {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 20px;
+  border-right: 1px solid #ddd;
 }
 
 .bc-left::after {
@@ -355,7 +356,7 @@ body {
 
 /* Make profile pic scale fluidly but stay circular */
 #profile-pic {
-  width: clamp(84px, 18vw, 170px);
+  width: clamp(84px, 15vw, 200px);
   height: clamp(84px, 18vw, 170px);
   border-radius: 10%;
   object-fit: cover;
@@ -419,19 +420,70 @@ body {
 }
 
 
-/* Small screens: stack vertically and center text/icons */
+/* Small screens: switch to horizontal divider */
 @media (max-width: 720px) {
   .business-card {
-    grid-template-columns: 1fr;   /* stack */
+    grid-template-columns: 1fr;   /* stack items */
     text-align: center;
   }
+
+  .bc-left {
+    border-right: none;           /* remove vertical */
+    border-bottom: 1px solid #ddd;/* add horizontal */
+    padding-right: 0;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  .bc-right {
+    padding-left: 0;
+  }
+
   .bc-meta { justify-content: center; }
   .bc-icons { justify-content: center; }
-  .bc-left { margin-bottom: 6px; }
 }
 
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .bc-icons a img { transition: none; }
+/* CV header layout */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
 }
 
+.cv-title h1 {
+  margin: 0;
+}
+
+.cv-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Scholar button (matches your minimal style) */
+.scholar-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.scholar-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-color: #ccc;
+}
+
+/* Make inline links (like Google Scholar next to email) smaller */
+.inline-link {
+  font-size: 0.9em;        /* shrink slightly */
+  white-space: nowrap;     /* keep whole link on one line */
+  text-decoration: underline;
+}

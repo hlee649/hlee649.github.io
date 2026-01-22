@@ -46,18 +46,18 @@
 
         {
             "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., ... , Woodworth, G. F., Felix, H., & Arvanitis C.",
-            "title": "Data-driven feedback identifies focused ultrasound exposure regimens for improved nanotheranostic targeting of the brain",
-            "year": 2025,
-            "doi": "https://doi.org/10.1101/2025.05.01.651328",
-            "journal": "Under Revision in Advanced Science, Preprint available at BioRxiv"
+            "title": "Data-Driven Feedback Identifies Focused Ultrasound Exposure Regimens for Improved Nanotheranostic Targeting of the Brain",
+            "year": 2026,
+            "doi": "https://doi.org/10.1002/advs.202517834",
+            "journal": "Advanced Science"
         },
 
         {
             "authors": "Lee, H., Zangabad, RP., Kim, C., Menezes, V., Degertekin, F. L. & Arvanitis C.",
-            "title": "Estimation of microbubble oscillation radius from acoustic emission using linear acoustics",
-            "year": 0,
-            "doi": "",
-            "journal": "In Preparation"
+            "title": "Quantitative acoustic monitoring of ensembles of weakly nonlinear microbubble oscillations in optically inaccessible environments",
+            "year": 2026,
+            "doi": "https://doi.org/10.48550/arXiv.2512.22292",
+            "journal": "Manuscript under preparation, preprint available at ArXiv"
         }
 
     ],
@@ -163,6 +163,27 @@
             "title": "Real-time radius estimation of oscillating microbubble based on linear acoustic wave propagation and superposition framework",
             "year": 2023,
             "conference": "IEEE International Ultrasonics Symposium (IUS), Montreal, Canada"
+        },
+
+        {
+            "authors": "Lee, H.,  Zangabad, R. P., Degertekin, F. L., & Arvanitis C. D.",
+            "title": "Acoustic emission-based estimation of weakly nonlinear microbubble dynamics",
+            "year": 2025,
+            "conference": "188th Meeting of the Acoustical Society of America, New Orleans, LA, USA, "
+        },
+
+        {
+            "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., ... , Woodworth, G. F., Felix, H., & Arvanitis C.",
+            "title": "Machine learning-assisted closed-loop focused ultrasound for targeted nanoparticle delivery and liquid biopsy in the brain",
+            "year": 2025,
+            "conference": "188th Meeting of the Acoustical Society of America, New Orleans, LA, USA, "
+        },
+
+        {
+            "authors": "*Lee, H., *Menezes, V., Zeng, S., Kim, C., Baseman, C., Kim, J., ... , Woodworth, G. F., Felix, H., & Arvanitis C.",
+            "title": "Machine learning–augmented, closed-loop controlled focused ultrasound",
+            "year": 2026,
+            "conference": "189th Meeting of the Acoustical Society of America, Honolulu, HI, USA, "
         }
 
 
@@ -222,6 +243,13 @@
             "title": "Monitoring of ultrasound targeted drug delivery with liquid biopsy",
             "year": 2024,
             "conference": "186th Meeting of the Acoustical Society of America (ASA), Ottawa, Canada"
+        },
+
+        {
+            "authors": "Menezes V., Lee, H., Kim, C., Arvanitis C. D.",
+            "title": "Monitoring of ultrasound targeted drug delivery with liquid biopsy",
+            "year": 2024,
+            "conference": " 7th Annual Congress on Liquid Biopsy, Orlando, FL, USA"
         }
     ],
 
@@ -369,7 +397,56 @@
                 "year": "2014–2016",
                 "description": "Executed rapid deployment operations for base defense, law enforcement, and crisis management. Developed discipline, teamwork, and leadership skills in high-pressure environments."
             }
+            ],
+
+            "mentoring": [
+            {
+                "role": "Research Mentor",
+                "mentee_level": "Vasileios Kouloumentas (Undergraduate)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2024–2026",
+                "description": ""
+            },
+            {
+                "role": "Research Mentor",
+                "mentee_level": "Puru Jain (Undergraduate)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2025",
+                "description": ""
+            },
+            {
+                "role": "Research Mentor",
+                "mentee_level": "Adrianne H Caracioni (Undergraduate)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2025",
+                "description": ""
+            }
+            ],
+            "professional_service": [
+            {
+                "role": "Session Co-Chair",
+                "venue": "189th Meeting of the Acoustical Society of America (ASA)",
+                "location": "Honolulu, HI, USA",
+                "year": 2025,
+                "description": "Data-driven Focused Ultrasound"
+            },
+            {
+                "role": "Peer Reviewer",
+                "venue": "Signal Transduction and Targeted Therapy",
+                "year": 2025,
+                "description": ""
+            },
+            {
+                "role": "Peer Reviewer",
+                "venue": "Biomedical Materials & Devices",
+                "year": 2026,
+                "description": ""
+            }
             ]
+
+
+
+            
    
       
 }

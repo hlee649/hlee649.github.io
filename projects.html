@@ -38,17 +38,26 @@
 
 
     <!-- CV Content -->
-    <div class="cv-container">
+<div class="cv-container">
 
+  <div class="cv-header">
+    <div class="cv-title">
+      <h1>
+        Hohyun (Henry) Lee, Ph.D.
+        <span class="muted">
+          | hlee649@gatech.edu ·
+          <a class="inline-link" href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+        </span>
+      </h1>
+    </div>
 
-            <div class="cv-header">
-                <div class="cv-title">
-                    <h1>Hohyun (Henry) Lee, Ph.D.<span class="muted">| hlee649@gatech.edu</span></h1>
-                </div>
-                <button id="download-pdf" class="download-btn">📄 CV PDF</button>
-            </div>
-            <div id="cv-content">
-            <div id="cv-content">
+    <div class="cv-actions">
+      <button id="download-pdf" class="download-btn">📄 CV PDF</button>
+    </div>
+  </div>
+
+  <!-- ⬇️ keep ONLY ONE cv-content (you had it twice) -->
+  <div id="cv-content">
         
         
 
@@ -119,6 +128,19 @@
             <hr>
             <ul id="award-list"></ul>
         </section>
+
+        <section id="mentoring">
+        <h2>Mentoring</h2>
+        <hr>
+        <ul id="mentoring-list"></ul>
+        </section>
+
+        <section id="professional-service">
+        <h2>Professional Service</h2>
+        <hr>
+        <ul id="professional-service-list"></ul>
+        </section>
+
         
 
         <section id="conference-proceedings">

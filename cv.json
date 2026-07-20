@@ -53,11 +53,11 @@
         },
 
         {
-            "authors": "Lee, H., Zangabad, RP., Kim, C., Menezes, V., Degertekin, F. L. & Arvanitis C.",
-            "title": "Quantitative acoustic monitoring of ensembles of weakly nonlinear microbubble oscillations in optically inaccessible environments",
+            "authors": "Lee, H., Zangabad, R. P., Kim, C., Menezes, V., Park, J., Degertekin, F. L., & Arvanitis C.",
+            "title": "Reconstruction of microbubble oscillation dynamics with frequency-domain backpropagation in optically inaccessible environments",
             "year": 2026,
-            "doi": "https://doi.org/10.48550/arXiv.2512.22292",
-            "journal": "Manuscript under preparation, preprint available at ArXiv"
+            "doi": "https://doi.org/10.1016/j.rineng.2026.111776",
+            "journal": "Results in Engineering, 111776"
         }
 
     ],
@@ -255,6 +255,18 @@
 
     "awards": [
         {
+            "name": "Postdoctoral Excellence Award",
+            "organization": "George W. Woodruff School of Mechanical Engineering",
+            "year": 2026
+        },
+
+        {
+            "name": "Georgia CTSA TL1 Postdoctoral Fellowship",
+            "organization": "Georgia Clinical & Translational Science Alliance",
+            "year": 2026
+        },
+
+        {
             "name": "Best Graduate Teaching Assistant Award",
             "organization": "Georgia Institute of Technology",
             "year": 2024
@@ -402,6 +414,13 @@
             "mentoring": [
             {
                 "role": "Research Mentor",
+                "mentee_level": "Joseph P Blair (Undergraduate)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2026",
+                "description": ""
+            },
+            {
+                "role": "Research Mentor",
                 "mentee_level": "Vasileios Kouloumentas (Undergraduate)",
                 "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
                 "year": "2024–2026",
@@ -429,6 +448,12 @@
                 "location": "Honolulu, HI, USA",
                 "year": 2025,
                 "description": "Data-driven Focused Ultrasound"
+            },
+            {
+                "role": "Peer Reviewer",
+                "venue": "Scientific Reports",
+                "year": 2026,
+                "description": ""
             },
             {
                 "role": "Peer Reviewer",

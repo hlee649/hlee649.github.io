@@ -140,8 +140,8 @@ function displayCVData(data) {
 
 
 
-}
 
+}
 
 // Function to bold and underline 'Hohyun Henry Lee' in author lists
 function formatAuthors(authorString) {
@@ -149,6 +149,5 @@ function formatAuthors(authorString) {
     let regex = new RegExp(nameToFormat, "g");
     return authorString.replace(regex, `<strong><u style="color: orange;">${nameToFormat}</u></strong>`);
 }
-
 
 

@@ -315,6 +315,12 @@
     ],
     "talks": [
         {
+            "title": "Data-Driven Feedback Identifies Focused Ultrasound Exposure Regimens for Improved Nanotheranostic Targeting of the Brain",
+            "event": "BRIC Hanbitsa Webinar",
+            "year": 2026
+        },
+
+        {
             "title": "Spatially Targeted Immunotherapy with closed loop control of focused ultrasound and immune checkpoint blockade therapy",
             "event": "BRIC Hanbitsa Webinar",
             "year": 2023

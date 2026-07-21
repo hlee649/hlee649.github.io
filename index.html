@@ -5,9 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hohyun Henry Lee</title>
-
-  <!-- Optional: modern menu font (keeps your brand script if you use it) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,46 +28,100 @@
     });
   </script>
 
-  <!-- Business Card -->
-  <main class="bc-wrap">
-<main class="bc-wrap">
-  <section class="business-card" aria-label="Digital business card">
-    <div class="bc-left">
-      <img src="images/profile.jpg" alt="Hohyun Henry Lee" id="profile-pic" />
-    </div>
+  <main>
+    <!-- Business Card -->
+    <section class="bc-wrap" aria-label="Profile">
+      <div class="business-card" aria-label="Digital business card">
+        <div class="bc-left">
+          <img src="images/profile.jpg" alt="Hohyun Henry Lee" id="profile-pic" />
+        </div>
 
-    <div class="bc-right">
-      <h1 class="bc-name">Hohyun (Henry) Lee, Ph.D.</h1>
-      <p class="bc-title">Therapeutic Ultrasound · Microbubbles · Machine Learning</p>
+        <div class="bc-right">
+          <h1 class="bc-name">Hohyun (Henry) Lee, Ph.D.</h1>
+          <p class="bc-title">Therapeutic Ultrasound &middot; Microbubbles &middot; Machine Learning</p>
 
-      <div class="bc-meta">
-        <a class="bc-line" href="mailto:hlee649@gatech.edu">hlee649@gatech.edu</a>
-        <span class="bc-sep">•</span>
-        <span class="bc-line">Atlanta, GA</span>
+          <div class="bc-meta">
+            <a class="bc-line" href="mailto:hlee649@gatech.edu">hlee649@gatech.edu</a>
+            <span class="bc-sep">&bull;</span>
+            <span class="bc-line">Atlanta, GA</span>
+          </div>
+
+          <!-- Contact Icons -->
+          <div class="bc-icons">
+            <a href="mailto:hlee649@gatech.edu" target="_blank" title="Email">
+              <img src="images/email-icon.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/hohyun-henry-lee-b66137243/" target="_blank" title="LinkedIn">
+              <img src="images/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
+              <img src="images/scholar-icon.png" alt="Google Scholar">
+            </a>
+            <a href="https://github.com/hlee649" target="_blank" title="GitHub">
+              <img src="images/github-icon.png" alt="GitHub">
+            </a>
+            <a href="projects.html" title="Curriculum Vitae">
+              <img src="images/cv-icon.png" alt="CV">
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Contact Icons -->
-      <div class="bc-icons">
-        <a href="mailto:hlee649@gatech.edu" target="_blank" title="Email">
-          <img src="images/email-icon.png" alt="Email">
-        </a>
-        <a href="https://www.linkedin.com/in/hohyun-henry-lee-b66137243/" target="_blank" title="LinkedIn">
-          <img src="images/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://scholar.google.com/citations?user=C3zCRlkAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
-          <img src="images/scholar-icon.png" alt="Google Scholar">
-        </a>
-        <a href="https://github.com/hlee649" target="_blank" title="GitHub">
-          <img src="images/github-icon.png" alt="GitHub">
-        </a>
-        <a href="projects.html" title="Curriculum Vitae">
-          <img src="images/cv-icon.png" alt="CV">
-        </a>
+    <section class="research-snapshot" aria-labelledby="research-snapshot-title">
+      <div class="snapshot-inner">
+        <p class="snapshot-label">Research Snapshot</p>
+        <h2 id="research-snapshot-title">Feedback-controlled ultrasound for brain-focused therapies</h2>
+        <p class="snapshot-statement">
+          I develop closed-loop focused ultrasound systems that combine acoustic monitoring,
+          microbubble physics, and machine learning for targeted therapy and diagnosis in the brain.
+        </p>
+
+        <div class="snapshot-grid" aria-label="Research themes">
+          <article class="snapshot-item">
+            <h3>Closed-loop focused ultrasound</h3>
+            <p>Feedback-guided exposure control for safer and more repeatable therapeutic delivery.</p>
+          </article>
+          <article class="snapshot-item">
+            <h3>Microbubble dynamics monitoring</h3>
+            <p>Acoustic methods for reconstructing and interpreting microbubble oscillations.</p>
+          </article>
+          <article class="snapshot-item">
+            <h3>Machine learning-guided control</h3>
+            <p>Data-driven models for selecting ultrasound regimens and improving targeting outcomes.</p>
+          </article>
+        </div>
+
+        <div class="selected-publications" aria-label="Selected publications">
+          <h3>Selected Publications</h3>
+          <ul>
+            <li>
+              <a href="https://doi.org/10.1002/advs.202517834" target="_blank" rel="noopener">
+                Data-Driven Feedback Identifies Focused Ultrasound Exposure Regimens for Improved Nanotheranostic Targeting of the Brain
+              </a>
+              <span>Advanced Science, 2026</span>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1016/j.rineng.2026.111776" target="_blank" rel="noopener">
+                Reconstruction of microbubble oscillation dynamics with frequency-domain backpropagation in optically inaccessible environments
+              </a>
+              <span>Results in Engineering, 2026</span>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1126/sciadv.add2288" target="_blank" rel="noopener">
+                Spatially targeted brain cancer immunotherapy with closed-loop controlled focused ultrasound and immune checkpoint blockade
+              </a>
+              <span>Science Advances, 2022</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
+    <footer class="home-footer">
+      <p>Therapeutic ultrasound, feedback control, and translational brain research.</p>
+    </footer>
+  </main>
 
 </body>
 </html>

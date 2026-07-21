@@ -1,6 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Patrick+Hand&display=swap');
+
 body {
     font-family: Arial, sans-serif; /* Applies sans-serif to everything */
+    background: #fff7d8;
 }
 
 
@@ -186,47 +189,49 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #333;
+    box-sizing: border-box;
+    background-color: #5d5a7a;
     display: flex;
     align-items: center;
     /* keep logo on the left, don't spread to edges */
     justify-content: flex-start;                 /* changed from space-between */
-    padding: 10px 20px;
+    padding: 12px 22px;
     width: 100%;
-    margin-left: -10px;
-    margin-top: -5px;
+    border-bottom: 2px solid #3f3a60;
+    box-shadow: 0 4px 0 rgba(255, 230, 109, 0.72);
 
     /* enable absolute centering for the menu */
     position: relative;                          /* NEW */
+    z-index: 10;
 }
 
 /* Brand Name (Text Button) */
 .navbar .brand-name {
-    font-family: "Arial";
-    font-weight: bold;
-    color: white;
+    font-family: 'Patrick Hand', 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: #fffdf2;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     transition: color 0.3s, background-color 0.3s;
-    margin-left: -20px;
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-size: clamp(22px, 3vw, 28px);
     position: relative;                          /* ensures it sits above the menu if overlapping */
     z-index: 2;                                   /* NEW */
 }
 
 /* Hover Effect */
 .navbar .brand-name:hover {
-    color: orange;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+    color: #ffe66d;
+    background-color: transparent;
+    border-radius: 0;
 }
 
 /* Menu — centered across the whole navbar */
 .navbar .menu {
     display: flex;
     gap: 15px;
-    font-family: "Arial";
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: clamp(14px, 2vw, 17px);
 
     position: absolute;                          /* NEW */
     left: 50%;                                    /* NEW */
@@ -235,18 +240,30 @@ body {
 
 /* Menu Links */
 .navbar a {
-    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    color: #fffdf2;
     text-align: center;
-    padding: 20px 10px;
+    padding: 8px 10px;
+    border-radius: 0;
     text-decoration: none;
-    font-size: clamp(minpx, 3vw, maxpx);
+    font-size: clamp(14px, 2vw, 18px);
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #ffe66d;
+    background-color: transparent;
+    border-bottom-color: #ffb3c1;
 }
 
 /* Active Link */
 .navbar a.active {
-    color: orange !important;
-    font-weight: bold;
-    border-bottom: 3px solid orange;
+    color: #fffdf2 !important;
+    font-weight: 600;
+    background: transparent;
+    border-bottom: 3px solid #ffe66d;
 }
 
 /* Responsive Design */
@@ -315,9 +332,12 @@ body {
   display: flex;
   justify-content: center;     /* horizontally center */
   align-items: flex-start;     /* stick to top instead of centering */
-  padding: 40px 16px;          /* space below navbar */
-  background: #f5f6f7;
-  min-height: calc(100dvh - 60px); /* still covers viewport height, minus navbar */
+  padding: 40px 16px 24px;     /* space below navbar */
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    #fff7d8;
+  background-size: 24px 24px;
 }
 
 
@@ -327,10 +347,12 @@ body {
   grid-template-columns: minmax(96px, 15vw) 1fr;        /* image column scales with width */
   gap: clamp(12px, 3vw, 50px);
   width: min(100%, 960px);                               /* max width cap */
-  background: #fff;
-  border-radius: clamp(8px, 1.2vw, 14px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background: #fffdf2;
+  border: 3px solid #3f3a60;
+  border-radius: 8px;
+  box-shadow: 10px 10px 0 #71c7ec;
   padding: clamp(16px, 3vw, 28px);
+  transform: rotate(-0.3deg);
 }
 
 /* Default (desktop/tablet): vertical divider */
@@ -339,7 +361,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-right: 20px;
-  border-right: 1px solid #ddd;
+  border-right: 3px dashed #ffb000;
 }
 
 .bc-left::after {
@@ -358,8 +380,10 @@ body {
 #profile-pic {
   width: clamp(84px, 15vw, 200px);
   height: clamp(84px, 18vw, 170px);
-  border-radius: 10%;
+  border: 3px solid #ff6f61;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 6px 6px 0 #b7e4c7;
 }
 
 .bc-right {
@@ -378,11 +402,13 @@ body {
   font-size: clamp(20px, 3.2vw, 32px);
   line-height: 1.2;
   font-weight: 700;
+  color: #2b2d42;
 }
 .bc-title {
   margin: 0;
-  color: #666;
+  color: #2f7f7f;
   font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
 }
 
 /* Meta line (email · location) */
@@ -391,7 +417,7 @@ body {
   flex-wrap: wrap;
   gap: clamp(6px, 1vw, 10px);
   align-items: center;
-  color: #666;
+  color: #5d4b73;
   font-size: clamp(13px, 1.6vw, 16px);
 }
 .bc-line { text-decoration: none; color: inherit; }
@@ -409,14 +435,14 @@ body {
 .bc-icons a img {
   width: clamp(24px, 3.6vw, 36px);
   height: clamp(24px, 3.6vw, 36px);
-  filter: grayscale(100%) brightness(0);
+  filter: saturate(0.85) contrast(1.05);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 /* Optional hover effect: lighten slightly */
 .bc-icons a:hover img {
   transform: translateY(-2px);
-  filter: grayscale(100%) brightness(0.3); 
+  filter: saturate(1.25) contrast(1.08);
 }
 
 
@@ -429,7 +455,7 @@ body {
 
   .bc-left {
     border-right: none;           /* remove vertical */
-    border-bottom: 1px solid #ddd;/* add horizontal */
+    border-bottom: 3px dashed #ffb000;/* add horizontal */
     padding-right: 0;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -441,6 +467,173 @@ body {
 
   .bc-meta { justify-content: center; }
   .bc-icons { justify-content: center; }
+}
+
+/* ==== Research Snapshot (homepage) ==== */
+.research-snapshot {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    #fff7d8;
+  background-size: 24px 24px;
+  padding: 0 16px 56px;
+}
+
+.snapshot-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #2b2d42;
+}
+
+.snapshot-label {
+  margin: 0 0 8px;
+  color: #ff6f61;
+  font-family: 'Patrick Hand', 'Montserrat', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.snapshot-inner h2 {
+  margin: 0 0 10px;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.25;
+  text-decoration: underline;
+  text-decoration-color: #ffe66d;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -4px;
+}
+
+.snapshot-statement {
+  max-width: 780px;
+  margin: 0 0 22px;
+  color: #514769;
+  font-size: clamp(15px, 1.7vw, 18px);
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.snapshot-item {
+  background: #fffdf2;
+  border: 3px solid #3f3a60;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 6px 6px 0 #ffd166;
+}
+
+.snapshot-item:nth-child(2) {
+  box-shadow: 6px 6px 0 #b7e4c7;
+  transform: rotate(0.4deg);
+}
+
+.snapshot-item:nth-child(3) {
+  box-shadow: 6px 6px 0 #ffb3c1;
+  transform: rotate(-0.4deg);
+}
+
+.snapshot-item h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #2f7f7f;
+}
+
+.snapshot-item p {
+  margin: 0;
+  color: #514769;
+  font-size: 14px;
+}
+
+.selected-publications {
+  background: #fffdf2;
+  border: 3px solid #3f3a60;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 8px 8px 0 #71c7ec;
+  position: relative;
+}
+
+.selected-publications::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 28px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #3f3a60;
+  border-radius: 50%;
+  background: #ff6f61;
+  box-shadow: 2px 2px 0 #ffd166, inset -3px -3px 0 rgba(63, 58, 96, 0.18);
+}
+
+.selected-publications h3 {
+  margin: 0 0 12px;
+  color: #ff6f61;
+  font-size: 18px;
+}
+
+.selected-publications ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.selected-publications li {
+  display: grid;
+  gap: 3px;
+  padding: 10px 0;
+  border-top: 2px dashed #d8c690;
+}
+
+.selected-publications li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.selected-publications a {
+  color: #2b2d42;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.selected-publications a:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+}
+
+.selected-publications span {
+  color: #5d4b73;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-footer {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    #fff7d8;
+  background-size: 24px 24px;
+  padding: 0 16px 42px;
+  text-align: center;
+}
+
+.home-footer p {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #5d4b73;
+  font-family: 'Patrick Hand', 'Montserrat', Arial, sans-serif;
+  font-size: 20px;
 }
 
 /* CV header layout */

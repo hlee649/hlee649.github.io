@@ -367,10 +367,17 @@
 
         "experience": [
             {
+                "role": "Georgia CTSA TL1 Postdoctoral Fellow",
+                "organization": "NIH/NCATS NRSA, TL1TR002382",
+                "location": "Georgia Institute of Technology / Emory University, Atlanta, GA, USA",
+                "year": "2026–Present",
+                "description": "Georgia CTSA TL1 Postdoctoral Program and Certificate Program in Translational Science (CPTS) fellow pursuing AI-driven transcranial focused ultrasound for targeted drug delivery in brain tumors."
+            },
+            {
                 "role": "Postdoctoral Fellow",
                 "organization": "Ultrasound Biophysics & Bioengineering Lab",
                 "location": "Georgia Institute of Technology, Atlanta, GA, USA",
-                "year": "2025–Present",
+                "year": "2025–2026",
                 "description": "Research on machine learning assisted closed-loop ultrasound therapy, mentoring graduate and undergraduate students, and leading collaborative projects."
             },
             {
@@ -385,7 +392,14 @@
                 "organization": "Acoustics I (ME 6760)",
                 "location": "Georgia Institute of Technology, Atlanta, GA, USA",
                 "year": "2022, 2024",
-                "description": "Led graduate level Problem Solving Studios to tackle Ph.D. Qualification Exam-level Acoustics Problems. Received Best Graduate Teaching Assistant Award in 2024"
+                "description": "Led graduate-level Problem Solving Studios to tackle Ph.D. Qualification Exam-level acoustics problems. <strong>Received the Best Graduate Teaching Assistant Award in 2024.</strong>"
+            },
+            {
+                "role": "Teaching Practicum",
+                "organization": "Biomedical Acoustics (ME/BME 8873)",
+                "location": "Georgia Institute of Technology, Atlanta, GA, USA",
+                "year": "2026",
+                "description": "Supported graduate instruction in biomedical acoustics through course preparation, student engagement, and teaching practice."
             },
             {
                 "role": "Undergraduate Research Assistant",

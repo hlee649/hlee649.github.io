@@ -101,16 +101,24 @@ function displayCVData(data) {
         patentList.appendChild(listItem);
     });
 
-    let expList = document.getElementById("experience-list");
-    data.experience.forEach((exp, index) => {
-    let listItem = document.createElement("li");
-    listItem.innerHTML = `
-        <strong>${exp.role}</strong> — ${exp.organization} <br>
-        <span class="muted">${exp.location} | ${exp.year}</span><br>
-        <span>${exp.description}</span>
-    `;
-    expList.appendChild(listItem);
-    });
+    const renderExperience = (listId, entries) => {
+        let expList = document.getElementById(listId);
+        entries.forEach(exp => {
+            let listItem = document.createElement("li");
+            listItem.innerHTML = `
+                <strong>${exp.role}</strong> — ${exp.organization} <br>
+                <span class="muted">${exp.location} | ${exp.year}</span><br>
+                <span>${exp.description}</span>
+            `;
+            expList.appendChild(listItem);
+        });
+    };
+
+    const teachingExperience = data.experience.filter(exp => /Teaching Assistant|Teaching Practicum/i.test(exp.role));
+    const researchExperience = data.experience.filter(exp => !/Teaching Assistant|Teaching Practicum/i.test(exp.role));
+
+    renderExperience("research-experience-list", researchExperience);
+    renderExperience("teaching-experience-list", teachingExperience);
 
     // Mentoring
     let mentoringList = document.getElementById("mentoring-list");
@@ -149,5 +157,3 @@ function formatAuthors(authorString) {
     let regex = new RegExp(nameToFormat, "g");
     return authorString.replace(regex, `<strong><u style="color: orange;">${nameToFormat}</u></strong>`);
 }
-
-

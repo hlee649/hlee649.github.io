@@ -322,7 +322,8 @@ body {
   color: #666;   /* muted gray */
 }
 
-#experience .muted {
+#research-experience .muted,
+#teaching-experience .muted {
   color: #666;
   font-style: italic;
 }

@@ -70,6 +70,19 @@ function displayCVData(data) {
         awardList.appendChild(listItem);
     });
 
+    let grantList = document.getElementById("grant-list");
+    data.grants?.forEach((grant, index) => {
+        let listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <strong>[G${index + 1}] ${grant.name}</strong><br>
+            <i>${grant.sponsor}</i><br>
+            <span>Support: ${grant.support}</span><br>
+            <span>Project: ${grant.project}</span><br>
+            <span class="muted">${grant.note}</span>
+        `;
+        grantList.appendChild(listItem);
+    });
+
     let talkList = document.getElementById("talk-list");
     data.talks.forEach((talk, index) => {
         let listItem = document.createElement("li");

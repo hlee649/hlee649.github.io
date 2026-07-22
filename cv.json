@@ -313,6 +313,15 @@
         }
 
     ],
+    "grants": [
+        {
+            "name": "Georgia CTSA TL1 Postdoctoral Fellowship",
+            "sponsor": "NIH/NCATS NRSA, TL1TR002382",
+            "support": "~ $100K*",
+            "project": "A Clinically Deployable AI-driven Transcranial Focused Ultrasound for Targeted Drug Delivery in Brain Tumors",
+            "note": "*(includes NIH NRSA stipend, CPTS tuition, travel support, and trainee-related research expenses)"
+        }
+    ],
     "talks": [
         {
             "title": "Data-Driven Feedback Identifies Focused Ultrasound Exposure Regimens for Improved Nanotheranostic Targeting of the Brain",

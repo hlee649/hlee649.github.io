@@ -109,42 +109,69 @@ body {
     flex-direction: column;
     gap: 1px;  /* tighter spacing between entries */
     position: relative;
-    padding-left: 1px;
+    padding-left: 0;
+    --education-year-width: 96px;
+    --education-divider-gap: 8px;
+    --education-line-left: calc(var(--education-year-width) + var(--education-divider-gap));
+}
+
+.education-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--education-line-left);
+    width: 2px;
+    background-color: #ccc;
 }
 
 
 .education-item {
-    display: flex;
-    align-items: stretch; /* Ensures all items stretch to the same height */
+    display: grid;
+    grid-template-columns: var(--education-year-width) 2px minmax(0, 1fr);
+    column-gap: var(--education-divider-gap);
+    align-items: stretch; /* Keeps the continuous timeline aligned across rows */
     position: relative;
 }
 
 .education-year {
     font-weight: normal;
-    width: 100px; /* Controls width of year section */
-    text-align: center;
-    margin-right: 20px;
+    width: auto;
+    text-align: right;
+    margin-right: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    line-height: 1.25;
+    padding-top: 0;
+}
+
+.education-year span {
+    display: block;
+    width: 100%;
+}
+
+.education-year span + span::before {
+    content: "- ";
 }
 
 .education-divider {
-    width: 2px; /* Width of vertical line */
-    background-color: #ccc; /* Line color */
-    height: 100%; /* Makes the line match the content height */
-    display: flex;
+    width: 2px; /* Keeps the grid column reserved for the timeline */
+    height: 100%;
 }
 
 .education-content {
+    min-width: 0;
     padding-left: 10px;
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .education-content ul {
     list-style-type: disc; /* Bullet points */
     padding-left: 20px;
+    margin: 0;
 }
 
 /* Center CV container on projects.html */
@@ -295,7 +322,24 @@ body {
 
 #education .education-content ul li {
     padding: 0px 0;  /* shrink line spacing inside each block */
+    padding-left: 0;
     margin: 0;       /* remove extra default margin */
+    text-indent: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .education-container {
+        --education-year-width: 72px;
+        --education-divider-gap: 6px;
+    }
+
+    .education-year {
+        font-size: 11px;
+    }
+
+    .education-content {
+        padding-left: 6px;
+    }
 }
 
 

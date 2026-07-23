@@ -58,6 +58,14 @@
             "year": 2026,
             "doi": "https://doi.org/10.1016/j.rineng.2026.111776",
             "journal": "Results in Engineering, 111776"
+        },
+
+        {
+            "authors": "Kilinc, S., Zangabad, R. P., Menezes, V., Lee, H., Arvanitis, C., & Degertekin, L.",
+            "title": "A CMUT-Based Transcranial Focused Ultrasound Platform for Blood-Brain Barrier Opening in Small Animal Models",
+            "year": 0,
+            "doi": "https://doi.org/10.48550/arXiv.2604.22666",
+            "journal": "arXiv preprint arXiv:2604.22666; under revision in Devices"
         }
 
     ],
@@ -317,7 +325,8 @@
         {
             "name": "Georgia CTSA TL1 Postdoctoral Fellowship",
             "sponsor": "NIH/NCATS NRSA, TL1TR002382",
-            "support": "~ $100K*",
+            "role": "PI",
+            "funding_size": "~ $100K*",
             "project": "A Clinically Deployable AI-driven Transcranial Focused Ultrasound for Targeted Drug Delivery in Brain Tumors",
             "note": "*(includes NIH NRSA stipend, CPTS tuition, travel support, and trainee-related research expenses)"
         }

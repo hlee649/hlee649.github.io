@@ -76,7 +76,8 @@ function displayCVData(data) {
         listItem.innerHTML = `
             <strong>[G${index + 1}] ${grant.name}</strong><br>
             <i>${grant.sponsor}</i><br>
-            <span>Support: ${grant.support}</span><br>
+            <span>Role: ${grant.role}</span><br>
+            <span>Funding size: ${grant.funding_size}</span><br>
             <span>Project: ${grant.project}</span><br>
             <span class="muted">${grant.note}</span>
         `;

@@ -150,11 +150,18 @@ function displayCVData(data) {
     let serviceList = document.getElementById("professional-service-list");
     data.professional_service?.forEach((s, index) => {
     let listItem = document.createElement("li");
-    listItem.innerHTML = `
-        <strong>[S${index + 1}] ${s.role}</strong><br>
-        <i>${s.venue}${s.location ? `, ${s.location}` : ""}, ${s.year}</i><br>
-        ${s.description ? `${s.description}` : ""}
-    `;
+    if (s.journals) {
+        listItem.innerHTML = `
+            <strong>[S${index + 1}] ${s.role}</strong><br>
+            ${s.journals.join("<br>")}
+        `;
+    } else {
+        listItem.innerHTML = `
+            <strong>[S${index + 1}] ${s.role}</strong><br>
+            <i>${s.venue}${s.location ? `, ${s.location}` : ""}, ${s.year}</i><br>
+            ${s.description ? `${s.description}` : ""}
+        `;
+    }
     serviceList.appendChild(listItem);
     });
 

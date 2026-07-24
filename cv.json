@@ -488,22 +488,12 @@
                 "description": "Data-driven Focused Ultrasound"
             },
             {
-                "role": "Peer Reviewer",
-                "venue": "Scientific Reports",
-                "year": 2026,
-                "description": ""
-            },
-            {
-                "role": "Peer Reviewer",
-                "venue": "Signal Transduction and Targeted Therapy",
-                "year": 2025,
-                "description": ""
-            },
-            {
-                "role": "Peer Reviewer",
-                "venue": "Biomedical Materials & Devices",
-                "year": 2026,
-                "description": ""
+                "role": "Technical Reviewer",
+                "journals": [
+                    "Scientific Reports",
+                    "Signal Transduction and Targeted Therapy",
+                    "Biomedical Materials & Devices"
+                ]
             }
             ]
 

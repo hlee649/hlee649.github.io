@@ -53,10 +53,13 @@ function displayCVData(data) {
     let otherConfList = document.getElementById("other-conference-list");
     data.other_conferences.forEach((conf, index) => {
         let listItem = document.createElement("li");
+        let conference = conf.url
+            ? `<a href="${conf.url}" target="_blank" rel="noopener noreferrer">${conf.conference}</a>`
+            : conf.conference;
         listItem.innerHTML = `
             <strong>[OC${index + 1}] "${conf.title}"</strong><br>
             ${formatAuthors(conf.authors)}<br>
-            <i>${conf.conference}, ${conf.year}</i>
+            <i>${conference}, ${conf.year}</i>
         `;
         otherConfList.appendChild(listItem);
     });

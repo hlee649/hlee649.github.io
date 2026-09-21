@@ -258,6 +258,29 @@
             "title": "Monitoring of ultrasound targeted drug delivery with liquid biopsy",
             "year": 2024,
             "conference": " 7th Annual Congress on Liquid Biopsy, Orlando, FL, USA"
+        },
+
+        {
+            "authors": "Menezes, V., Lee, H., Kim, C., & Arvanitis, C.",
+            "title": "Improved detection of brain cancer-soluble biomarkers with closed-loop focused ultrasound",
+            "year": 2024,
+            "conference": "7th Annual Congress on Liquid Biopsy (ISLB), Orlando, FL, USA"
+        },
+
+        {
+            "authors": "Menezes, V., Lee, H., & Arvanitis, C.",
+            "title": "The Role of Cell Death Morphology in Brain Cancer Treatment Monitoring Using Focused Ultrasound-Enhanced Liquid Biopsy",
+            "year": 2026,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), accepted for presentation",
+            "url": "https://ieee-ius.org/2026"
+        },
+
+        {
+            "authors": "Tong, Z., Lee, H., Ferry, Y., & Arvanitis, C.",
+            "title": "Identification of Sonication Timelines for Maximal Immune Cell Infiltration in Brain",
+            "year": 2026,
+            "conference": "IEEE International Ultrasonics Symposium (IUS), accepted for presentation",
+            "url": "https://ieee-ius.org/2026"
         }
     ],
 

@@ -107,10 +107,13 @@ function displayCVData(data) {
     let patentList = document.getElementById("patent-list");
     data.patents.forEach((pat, index) => {
         let listItem = document.createElement("li");
+        let patentStatus = pat.patent_number === "Pending"
+            ? "Patent Pending"
+            : `Patent No: ${pat.patent_number}`;
         listItem.innerHTML = `
             <strong>[P${index + 1}] ${pat.title} </strong><br>
             ${formatAuthors(pat.inventors)}<br>
-            <i>Patent ${pat.patent_number}, ${pat.year}</i>
+            <i>${patentStatus}, ${pat.year}</i>
         `;
         patentList.appendChild(listItem);
     });

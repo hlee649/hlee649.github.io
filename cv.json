@@ -271,16 +271,14 @@
             "authors": "Menezes, V., Lee, H., & Arvanitis, C.",
             "title": "The Role of Cell Death Morphology in Brain Cancer Treatment Monitoring Using Focused Ultrasound-Enhanced Liquid Biopsy",
             "year": 2026,
-            "conference": "IEEE International Ultrasonics Symposium (IUS), accepted for presentation",
-            "url": "https://ieee-ius.org/2026"
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Raleigh, NC, USA"
         },
 
         {
             "authors": "Tong, Z., Lee, H., Ferry, Y., & Arvanitis, C.",
             "title": "Identification of Sonication Timelines for Maximal Immune Cell Infiltration in Brain",
             "year": 2026,
-            "conference": "IEEE International Ultrasonics Symposium (IUS), accepted for presentation",
-            "url": "https://ieee-ius.org/2026"
+            "conference": "IEEE International Ultrasonics Symposium (IUS), Raleigh, NC, USA"
         }
     ],
 
@@ -392,17 +390,24 @@
 
         "patents": [
             {
+                "inventors": "Lee, H. & Arvanitis, C. D.",
+                "title": "Intensity-Based Ultrasound-Guided Focused Ultrasound System for Focused Ultrasound Interventions in Small Animals",
+                "year": 2026,
+                "patent_number": "Pending"
+            },
+
+            {
                 "inventors": "Lee, H., Menezes, V., & Arvanitis, C.D",
                 "title": "Machine learning methods to control microbubble dynamics",
                 "year": 2024,
-                "patent_number": "63/694,934, ORP Filed Sep."
+                "patent_number": "Pending"
             },
 
             {
                 "inventors": "Lee, H. & Arvanitis, C.D",
                 "title": "Acoustical method for microbubble oscillatory radius esimation and acoustic emission detection",
                 "year": 2024,
-                "patent_number": "18/281,711, US Patent"
+                "patent_number": "Pending"
             }
         ],
 

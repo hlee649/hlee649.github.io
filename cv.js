@@ -53,13 +53,10 @@ function displayCVData(data) {
     let otherConfList = document.getElementById("other-conference-list");
     data.other_conferences.forEach((conf, index) => {
         let listItem = document.createElement("li");
-        let conference = conf.url
-            ? `<a href="${conf.url}" target="_blank" rel="noopener noreferrer">${conf.conference}</a>`
-            : conf.conference;
         listItem.innerHTML = `
             <strong>[OC${index + 1}] "${conf.title}"</strong><br>
             ${formatAuthors(conf.authors)}<br>
-            <i>${conference}, ${conf.year}</i>
+            <i>${conf.conference}, ${conf.year}</i>
         `;
         otherConfList.appendChild(listItem);
     });
@@ -113,7 +110,7 @@ function displayCVData(data) {
         listItem.innerHTML = `
             <strong>[P${index + 1}] ${pat.title} </strong><br>
             ${formatAuthors(pat.inventors)}<br>
-            <i>Patent No: ${pat.patent_number}, ${pat.year}</i>
+            <i>Patent ${pat.patent_number}, ${pat.year}</i>
         `;
         patentList.appendChild(listItem);
     });

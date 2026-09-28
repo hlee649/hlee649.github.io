@@ -480,6 +480,20 @@
             "mentoring": [
             {
                 "role": "Research Mentor",
+                "mentee_level": "Safiya Dodoo (Master's)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2026",
+                "description": ""
+            },
+            {
+                "role": "Research Mentor",
+                "mentee_level": "Jieun Lee (Undergraduate)",
+                "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
+                "year": "2026",
+                "description": ""
+            },
+            {
+                "role": "Research Mentor",
                 "mentee_level": "Joseph P Blair (Undergraduate)",
                 "context": "Ultrasound Biophysics & Bioengineering Lab, Georgia Tech",
                 "year": "2026",

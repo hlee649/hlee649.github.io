@@ -28,11 +28,13 @@ function displayCVData(data) {
     let pubList = document.getElementById("publication-list");
     data.publications.forEach((pub, index) => {
         let listItem = document.createElement("li");
+        let publicationYear = pub.year > 0 ? `, ${pub.year}` : "";
+        let doiLink = pub.doi ? `<a href="${pub.doi}" target="_blank">DOI</a>` : "";
         listItem.innerHTML = `
             <strong>[J${index + 1}] ${pub.title}</strong><br>
             ${formatAuthors(pub.authors)}<br>
-            <i>${pub.journal}, ${pub.year}</i>
-            <a href="${pub.doi}" target="_blank">DOI</a>
+            <i>${pub.journal}${publicationYear}</i>
+            ${doiLink}
         `;
         pubList.appendChild(listItem);
     });

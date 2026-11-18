@@ -66,6 +66,14 @@
             "year": 0,
             "doi": "https://doi.org/10.48550/arXiv.2604.22666",
             "journal": "arXiv preprint arXiv:2604.22666; under revision in Devices"
+        },
+
+        {
+            "authors": "Dash, P. P., Lee, H., & Arvanitis, C. D.",
+            "title": "Differentiable topology optimization for high-fidelity acoustic holography beyond the thin-element approximation",
+            "year": 0,
+            "doi": "",
+            "journal": "Manuscript under preparation"
         }
 
     ],

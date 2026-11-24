@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
             // Sort all sections by year (most recent first)
-            data.publications.sort((a, b) => b.year - a.year);
+            const leadAuthor = /^(?:\*)?Lee, H\.(?=,|$)|(?:^|,\s*)\*Lee, H\.(?=,|$)/;
+            data.publications.sort((a, b) =>
+                b.year - a.year || Number(leadAuthor.test(b.authors)) - Number(leadAuthor.test(a.authors))
+            );
             data.conferences.sort((a, b) => b.year - a.year);
             data.other_conferences.sort((a, b) => b.year - a.year);
             data.awards.sort((a, b) => b.year - a.year);
